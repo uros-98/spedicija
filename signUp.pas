@@ -19,6 +19,7 @@ type
     buttonLogin: TButton;
     procedure Label1Click(Sender: TObject);
     procedure buttonLoginClick(Sender: TObject);
+    procedure buttonRegisterClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +31,7 @@ var
 
 implementation
 
-uses login;
+uses login,register;
 {$R *.fmx}
 
 procedure TformSignUp.buttonLoginClick(Sender: TObject);
@@ -38,6 +39,12 @@ begin
     formSignUp.Hide;
     formLogin.Show;
 
+end;
+
+procedure TformSignUp.buttonRegisterClick(Sender: TObject);
+begin
+    formSignup.Hide;
+    formregister.show;
 end;
 
 procedure TformSignUp.Label1Click(Sender: TObject);

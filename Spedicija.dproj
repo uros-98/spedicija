@@ -134,6 +134,26 @@
             <Form>formLogin</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="register.pas">
+            <Form>formRegister</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dm.pas">
+            <Form>db</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="meni.pas">
+            <Form>formMeni</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zakaziTransport.pas">
+            <Form>formZakaziTransport</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zakaziTransport2.pas">
+            <Form>Form1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
