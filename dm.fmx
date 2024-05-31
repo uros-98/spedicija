@@ -12,9 +12,8 @@ object db: Tdb
     Params.Strings = (
       'DriverID=SQLite'
       
-        'Database=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Pr' +
-        'ojects\sqlite.db')
-    Connected = True
+        'Database=C:\Users\nikol\AutoPlac\Spedicija\spedicija-main\sqlite' +
+        '.db')
     LoginPrompt = False
     Left = 160
     Top = 144

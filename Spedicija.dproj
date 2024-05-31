@@ -151,7 +151,11 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="zakaziTransport2.pas">
-            <Form>Form1</Form>
+            <Form>formZakaziTransport2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="pratiTransport.pas">
+            <Form>formPratiTransport</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

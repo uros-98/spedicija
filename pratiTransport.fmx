@@ -1,16 +1,16 @@
-object formMeni: TformMeni
+object formPratiTransport: TformPratiTransport
   Left = 0
   Top = 0
   Caption = 'Form1'
   ClientHeight = 480
-  ClientWidth = 597
+  ClientWidth = 629
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
-    Size.Width = 597.000000000000000000
+    Size.Width = 629.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -8524,13 +8524,13 @@ object formMeni: TformMeni
             'ike\11111.jpg'
         end>
       Align = Client
-      Size.Width = 597.000000000000000000
+      Size.Width = 629.000000000000000000
       Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       object bot: TLayout
         Align = Bottom
         Position.Y = 392.000000000000000000
-        Size.Width = 597.000000000000000000
+        Size.Width = 629.000000000000000000
         Size.Height = 88.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -8549,7 +8549,7 @@ object formMeni: TformMeni
       end
       object top: TLayout
         Align = Top
-        Size.Width = 597.000000000000000000
+        Size.Width = 629.000000000000000000
         Size.Height = 90.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -8562,7 +8562,6 @@ object formMeni: TformMeni
           TabOrder = 0
           Text = 'Button1'
           TextSettings.Trimming = None
-          OnClick = Button1Click
         end
         object Image2: TImage
           MultiResBitmap.Height = 1500
@@ -10136,50 +10135,43 @@ object formMeni: TformMeni
       end
       object center: TLayout
         Align = Client
-        Size.Width = 597.000000000000000000
+        Size.Width = 629.000000000000000000
         Size.Height = 302.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object ButtonZTransport: TButton
+        object Rectangle1: TRectangle
           Align = Center
-          Margins.Bottom = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Size.Width = 323.000000000000000000
+          Size.Height = 35.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
-          Text = 'Zakazite transport'
-          TextSettings.Trimming = None
-          OnClick = ButtonZTransportClick
-        end
-        object buttonPTransport: TButton
-          Align = Center
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 2
-          Text = 'Pratite transport'
-          TextSettings.Trimming = None
-          OnClick = buttonPTransportClick
-        end
-        object buttonCarina: TButton
-          Align = Center
-          Margins.Top = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          Text = 'Carinske usluge'
-          TextSettings.Trimming = None
-        end
-        object buttonRSkladiste: TButton
-          Align = Center
-          Margins.Top = 200.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          Text = 'Rezervisite svoje skladiste'
-          TextSettings.Trimming = None
+          object Label1: TLabel
+            Align = Left
+            Size.Width = 129.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Unesite kod za pra'#263'enje:'
+            TabOrder = 0
+          end
+          object editKod: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            Size.Width = 114.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Button3: TButton
+            Align = Right
+            Position.X = 243.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'escapetoolbuttonbordered'
+            TabOrder = 2
+            Text = 'Button3'
+            TextSettings.Trimming = None
+            OnClick = Button3Click
+          end
         end
       end
     end

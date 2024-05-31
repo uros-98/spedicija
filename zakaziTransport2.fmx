@@ -1,4 +1,4 @@
-object Form1: TForm1
+object formZakaziTransport2: TformZakaziTransport2
   Left = 0
   Top = 0
   Caption = 'Form1'
@@ -8562,6 +8562,7 @@ object Form1: TForm1
           TabOrder = 0
           Text = 'Button1'
           TextSettings.Trimming = None
+          OnClick = Button1Click
         end
         object Image2: TImage
           MultiResBitmap.Height = 1500
@@ -10288,8 +10289,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 65.000000000000000000
+              Size.Width = 236.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10301,7 +10302,7 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'Ulica i broj:'
               TabOrder = 2
             end
           end
@@ -10326,8 +10327,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 70.000000000000000000
+              Size.Width = 231.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10339,7 +10340,7 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'Maticni broj:'
               TabOrder = 2
             end
           end
@@ -10363,8 +10364,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 30.000000000000000000
+              Size.Width = 271.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10376,7 +10377,7 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'PIB:'
               TabOrder = 2
             end
           end
@@ -10411,8 +10412,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 100.000000000000000000
+              Size.Width = 201.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10424,7 +10425,7 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'Naziv preduzeca:'
               TabOrder = 2
             end
           end
@@ -10448,8 +10449,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 60.000000000000000000
+              Size.Width = 241.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10461,7 +10462,7 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'Puno ime:'
               TabOrder = 2
             end
           end
@@ -10485,8 +10486,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 90.000000000000000000
+              Size.Width = 211.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10498,7 +10499,7 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'Kontakt telefon:'
               TabOrder = 2
             end
           end
@@ -10522,8 +10523,8 @@ object Form1: TForm1
               Align = Client
               StyleLookup = 'transparentedit'
               TabOrder = 1
-              Margins.Left = 50.000000000000000000
-              Size.Width = 251.000000000000000000
+              Margins.Left = 45.000000000000000000
+              Size.Width = 256.000000000000000000
               Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
             end
@@ -10535,9 +10536,24 @@ object Form1: TForm1
               Size.Height = 17.000000000000000000
               Size.PlatformDefault = False
               TextSettings.FontColor = claWhite
-              Text = 'Grad:'
+              Text = 'E-mail'
               TabOrder = 2
             end
+          end
+          object Button3: TButton
+            Align = Bottom
+            Margins.Left = 100.000000000000000000
+            Margins.Right = 100.000000000000000000
+            Margins.Bottom = 20.000000000000000000
+            Position.X = 100.000000000000000000
+            Position.Y = 354.000000000000000000
+            Size.Width = 171.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 18
+            Text = 'Potvrdi'
+            TextSettings.Trimming = None
+            OnClick = Button3Click
           end
         end
       end

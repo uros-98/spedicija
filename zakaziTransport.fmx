@@ -10297,9 +10297,10 @@ object formZakaziTransport: TformZakaziTransport
               Text = 'Izaberite transportnu kompaniju...'
               TextSettings.FontColor = claWhite
               TextSettings.Trimming = None
+              OnClick = Button3Click
             end
           end
-          object Button4: TButton
+          object buttonPotvrdi: TButton
             Align = Center
             Margins.Top = 150.000000000000000000
             Size.Width = 121.000000000000000000
@@ -10308,6 +10309,7 @@ object formZakaziTransport: TformZakaziTransport
             TabOrder = 12
             Text = 'Potvrdi'
             TextSettings.Trimming = None
+            OnClick = buttonPotvrdiClick
           end
         end
       end
