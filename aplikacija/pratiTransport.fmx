@@ -2,16 +2,16 @@ object formPratiTransport: TformPratiTransport
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 480
-  ClientWidth = 629
+  ClientHeight = 482
+  ClientWidth = 605
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
-    Size.Width = 629.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 605.000000000000000000
+    Size.Height = 482.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object Image1: TImage
@@ -8524,13 +8524,13 @@ object formPratiTransport: TformPratiTransport
             'ike\11111.jpg'
         end>
       Align = Client
-      Size.Width = 629.000000000000000000
-      Size.Height = 480.000000000000000000
+      Size.Width = 605.000000000000000000
+      Size.Height = 482.000000000000000000
       Size.PlatformDefault = False
       object bot: TLayout
         Align = Bottom
-        Position.Y = 392.000000000000000000
-        Size.Width = 629.000000000000000000
+        Position.Y = 394.000000000000000000
+        Size.Width = 605.000000000000000000
         Size.Height = 88.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -8549,7 +8549,7 @@ object formPratiTransport: TformPratiTransport
       end
       object top: TLayout
         Align = Top
-        Size.Width = 629.000000000000000000
+        Size.Width = 605.000000000000000000
         Size.Height = 90.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -10135,8 +10135,8 @@ object formPratiTransport: TformPratiTransport
       end
       object center: TLayout
         Align = Client
-        Size.Width = 629.000000000000000000
-        Size.Height = 302.000000000000000000
+        Size.Width = 605.000000000000000000
+        Size.Height = 304.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object Rectangle1: TRectangle

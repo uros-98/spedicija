@@ -17,9 +17,11 @@ type
     buttonRegister: TButton;
     Label1: TLabel;
     buttonLogin: TButton;
+    buttonZaposleni: TButton;
     procedure Label1Click(Sender: TObject);
     procedure buttonLoginClick(Sender: TObject);
     procedure buttonRegisterClick(Sender: TObject);
+    procedure buttonZaposleniClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,8 +33,15 @@ var
 
 implementation
 
-uses login,register;
+uses login,register,loginZaposleni;
 {$R *.fmx}
+
+
+procedure TformSignUp.buttonZaposleniClick(Sender: TObject);
+begin
+    formSignUp.hide;
+    formLoginZaposleni.show;
+end;
 
 procedure TformSignUp.buttonLoginClick(Sender: TObject);
 begin

@@ -35,7 +35,7 @@ var
 
 implementation
 
-uses meni, dm;  // Pretpostavimo da je sledeća forma nazvana sledecaForma
+uses meni, dm, pratiTransport2;
 
 {$R *.fmx}
 
@@ -51,7 +51,7 @@ begin
   begin
     ShowMessage('Kod postoji u bazi. Preusmeravam na sledeći prozor...');
     formPratiTransport.Hide;
-    //formSledecaForma.Show;  // Pretpostavimo da je sledeća forma nazvana formSledecaForma
+    formPratiTransport2.show;
   end
   else
   begin

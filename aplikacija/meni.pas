@@ -24,6 +24,8 @@ type
     procedure Button1Click(Sender: TObject);
     procedure ButtonZTransportClick(Sender: TObject);
     procedure buttonPTransportClick(Sender: TObject);
+    procedure buttonCarinaClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +37,7 @@ var
 
 implementation
 
-uses login, zakaziTransport, pratiTransport;
+uses login, zakaziTransport, pratiTransport, carina, kontakt;
 
 {$R *.fmx}
 
@@ -43,6 +45,18 @@ procedure TformMeni.Button1Click(Sender: TObject);
 begin
     formMeni.hide;
     formLogin.show;
+end;
+
+procedure TformMeni.Button2Click(Sender: TObject);
+begin
+    formMeni.hide;
+    formKontakt.show;
+end;
+
+procedure TformMeni.buttonCarinaClick(Sender: TObject);
+begin
+    formMeni.hide;
+    formCarina.show;
 end;
 
 procedure TformMeni.buttonPTransportClick(Sender: TObject);

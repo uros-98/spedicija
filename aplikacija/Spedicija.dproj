@@ -158,6 +158,30 @@
             <Form>formPratiTransport</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="pratiTransport2.pas">
+            <Form>formPratiTransport2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="carina.pas">
+            <Form>formCarina</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="kontakt.pas">
+            <Form>formKontakt</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="loginZaposleni.pas">
+            <Form>formLoginZaposleni</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="loginZaposleni2.pas">
+            <Form>formLoginZaposleni2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zaposleniMeni.pas">
+            <Form>formZaposleniMeni</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

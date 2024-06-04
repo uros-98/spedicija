@@ -8545,6 +8545,7 @@ object formMeni: TformMeni
           Text = 'Kontakt info.'
           TextSettings.FontColor = claCoral
           TextSettings.Trimming = None
+          OnClick = Button2Click
         end
       end
       object top: TLayout
@@ -10170,6 +10171,7 @@ object formMeni: TformMeni
           TabOrder = 1
           Text = 'Carinske usluge'
           TextSettings.Trimming = None
+          OnClick = buttonCarinaClick
         end
         object buttonRSkladiste: TButton
           Align = Center
