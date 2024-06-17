@@ -182,6 +182,62 @@
             <Form>formZaposleniMeni</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="proveraPorudzbine.pas">
+            <Form>formProveraPorudzbine</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="proveraPorudzbine2.pas">
+            <Form>formProveraPorudzbine2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="infoTeret.pas">
+            <Form>formInfoTeret</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="komunikacija.pas">
+            <Form>formKomunikacija</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="odrzavanje.pas">
+            <Form>formOdrzavanje</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="potvrdaDostave.pas">
+            <Form>formPotvrdaDostave</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="loginDispicer.pas">
+            <Form>formLoginDispicer</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="loginDispicer2.pas">
+            <Form>formLoginDispicer2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dispicerMeni.pas">
+            <Form>formDispicerMeni</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dispicerKomunikacija.pas">
+            <Form>formDispicerKomunikacija</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dispicerTransport.pas">
+            <Form>formDispicerTransport</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dispicerTransport2.pas">
+            <Form>formDispicerTransport2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dispicerBerza.pas">
+            <Form>formDispicerBerza</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="izbor.pas">
+            <Form>formIzbor</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

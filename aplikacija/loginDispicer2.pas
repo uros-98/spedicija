@@ -1,4 +1,4 @@
-unit loginZaposleni2;
+unit loginDispicer2;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   FMX.Edit, FMX.Objects, FMX.Controls.Presentation, FMX.Layouts;
 
 type
-  TformLoginZaposleni2 = class(TForm)
+  TformLoginDispicer2 = class(TForm)
     slika: TLayout;
     Image1: TImage;
     top: TLayout;
@@ -34,21 +34,21 @@ type
   end;
 
 var
-  formLoginZaposleni2: TformLoginZaposleni2;
+  formLoginDispicer2: TformLoginDispicer2;
 
 implementation
 
-uses signUp,dm, zaposlenimeni;
+uses meni, dm, dispicerMeni;
 
 {$R *.fmx}
 
-procedure TformLoginZaposleni2.Button2Click(Sender: TObject);
+procedure TformLoginDispicer2.Button2Click(Sender: TObject);
 begin
-    formloginZaposleni2.Hide;
-    formSignUp.show;
+    formLoginDispicer2.hide;
+    formMeni.show;
 end;
 
-procedure TformLoginZaposleni2.buttonLogInClick(Sender: TObject);
+procedure TformLoginDispicer2.buttonLogInClick(Sender: TObject);
 var
   pwd: string;
   zaposleni: Integer;
@@ -81,15 +81,15 @@ begin
       begin
         pwd := qtemp.FieldByName('password').AsString;
         zaposleni := qtemp.FieldByName('zaposleni').AsInteger;
-        if zaposleni <> 1 then
+        if zaposleni <> 2 then
         begin
           ShowMessage('Nemate pristup ovom delu sistema!');
           editEmail.SetFocus;
         end
         else if pwd = editPassword.Text then
         begin
-          formLoginZaposleni2.Hide;
-          formZaposleniMeni.Show;
+          formLoginDispicer2.Hide;
+          formDispicerMeni.Show;
         end
         else
         begin
@@ -101,6 +101,4 @@ begin
     end;
   end;
 end;
-
-
 end.

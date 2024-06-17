@@ -3,14 +3,14 @@ object formSignUp: TformSignUp
   Top = 0
   Caption = 'Form1'
   ClientHeight = 480
-  ClientWidth = 600
+  ClientWidth = 599
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
-    Size.Width = 600.000000000000000000
+    Size.Width = 599.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -8524,13 +8524,13 @@ object formSignUp: TformSignUp
             'ike\11111.jpg'
         end>
       Align = Client
-      Size.Width = 600.000000000000000000
+      Size.Width = 599.000000000000000000
       Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       object bot: TLayout
         Align = Bottom
         Position.Y = 392.000000000000000000
-        Size.Width = 600.000000000000000000
+        Size.Width = 599.000000000000000000
         Size.Height = 88.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -8574,15 +8574,15 @@ object formSignUp: TformSignUp
       end
       object top: TLayout
         Align = Top
-        Size.Width = 600.000000000000000000
+        Size.Width = 599.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object buttonZaposleni: TButton
           Align = Right
           StyledSettings = [Family]
-          Position.X = 464.000000000000000000
-          Size.Width = 136.000000000000000000
+          Position.X = 439.000000000000000000
+          Size.Width = 160.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'toolbutton'
@@ -8594,10 +8594,25 @@ object formSignUp: TformSignUp
           TextSettings.Trimming = None
           OnClick = buttonZaposleniClick
         end
+        object buttonDispeceri: TButton
+          Align = Left
+          StyledSettings = [Family]
+          Size.Width = 153.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'donetoolbutton'
+          TabOrder = 3
+          Text = 'Login za dispi'#269'ere!'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00090000000000000004000000}
+          TextSettings.FontColor = claSlateblue
+          TextSettings.Trimming = None
+          OnClick = buttonDispeceriClick
+        end
       end
       object center: TLayout
         Align = Client
-        Size.Width = 600.000000000000000000
+        Size.Width = 599.000000000000000000
         Size.Height = 342.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0

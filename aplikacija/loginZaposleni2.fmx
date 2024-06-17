@@ -2491,16 +2491,6 @@ object formLoginZaposleni2: TformLoginZaposleni2
           TextSettings.Trimming = None
           OnClick = buttonLogInClick
         end
-        object buttonSignIn: TButton
-          Align = Center
-          StyledSettings = [Family, Size, FontColor]
-          Margins.Top = 120.000000000000000000
-          StyleLookup = 'toolbutton'
-          TabOrder = 4
-          Text = 'Sign up'
-          TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.Trimming = None
-        end
       end
     end
   end

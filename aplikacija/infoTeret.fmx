@@ -1,8 +1,8 @@
-object formMeni: TformMeni
+object formInfoTeret: TformInfoTeret
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 480
+  ClientHeight = 477
   ClientWidth = 597
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -11,7 +11,7 @@ object formMeni: TformMeni
   object slika: TLayout
     Align = Client
     Size.Width = 597.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 477.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object Image1: TImage
@@ -8525,39 +8525,26 @@ object formMeni: TformMeni
         end>
       Align = Client
       Size.Width = 597.000000000000000000
-      Size.Height = 480.000000000000000000
+      Size.Height = 477.000000000000000000
       Size.PlatformDefault = False
       object bot: TLayout
         Align = Bottom
-        Position.Y = 392.000000000000000000
+        Position.Y = 453.000000000000000000
         Size.Width = 597.000000000000000000
-        Size.Height = 88.000000000000000000
+        Size.Height = 24.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
-        object Button2: TButton
-          Align = Center
-          StyledSettings = [Family, Size, Style]
-          Size.Width = 151.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = 'donetoolbutton'
-          TabOrder = 0
-          Text = 'Kontakt info.'
-          TextSettings.FontColor = claCoral
-          TextSettings.Trimming = None
-          OnClick = Button2Click
-        end
       end
       object top: TLayout
         Align = Top
         Size.Width = 597.000000000000000000
-        Size.Height = 90.000000000000000000
+        Size.Height = 65.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object Button1: TButton
           Align = Left
           Size.Width = 80.000000000000000000
-          Size.Height = 90.000000000000000000
+          Size.Height = 65.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'priortoolbuttonbordered'
           TabOrder = 0
@@ -10138,51 +10125,222 @@ object formMeni: TformMeni
       object center: TLayout
         Align = Client
         Size.Width = 597.000000000000000000
-        Size.Height = 302.000000000000000000
+        Size.Height = 388.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object ButtonZTransport: TButton
+        object C: TRectangle
           Align = Center
-          Margins.Bottom = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Fill.Color = xFFFF5C1D
+          Size.Width = 371.000000000000000000
+          Size.Height = 333.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
-          Text = 'Zakazite transport'
-          TextSettings.Trimming = None
-          OnClick = ButtonZTransportClick
-        end
-        object buttonPTransport: TButton
-          Align = Center
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 2
-          Text = 'Pratite transport'
-          TextSettings.Trimming = None
-          OnClick = buttonPTransportClick
-        end
-        object buttonCarina: TButton
-          Align = Center
-          Margins.Top = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          Text = 'Carinske usluge'
-          TextSettings.Trimming = None
-          OnClick = buttonCarinaClick
-        end
-        object buttonPPorudzbine: TButton
-          Align = Center
-          Margins.Top = 200.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          Text = 'Provera porudzbine'
-          TextSettings.Trimming = None
-          OnClick = buttonPPorudzbineClick
+          Stroke.Kind = None
+          object Text1: TText
+            Align = Top
+            Size.Width = 371.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Informacije o teretu'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00090000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+          object Layout1: TLayout
+            Align = Center
+            Margins.Bottom = 250.000000000000000000
+            Size.Width = 301.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 14
+            object Line1: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 301.000000000000000000
+              Size.Height = 8.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object vrstaTereta: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 301.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Vrsta tereta:'
+              TabOrder = 1
+            end
+          end
+          object Layout2: TLayout
+            Align = Center
+            Margins.Bottom = 200.000000000000000000
+            Size.Width = 301.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 13
+            object Line2: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 301.000000000000000000
+              Size.Height = 8.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object tezinaTereta: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 301.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Tezina tereta:'
+              TabOrder = 1
+            end
+          end
+          object Layout3: TLayout
+            Align = Center
+            Margins.Bottom = 150.000000000000000000
+            Size.Width = 302.000000000000000000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 12
+            object Line3: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 302.000000000000000000
+              Size.Height = 7.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object brojPaketa: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 302.000000000000000000
+              Size.Height = 27.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Broj paketa/paleta:'
+              TabOrder = 1
+            end
+          end
+          object Layout4: TLayout
+            Align = Center
+            Margins.Bottom = 100.000000000000000000
+            Size.Width = 301.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            object Line4: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 301.000000000000000000
+              Size.Height = 8.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object vrednostTereta: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 301.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Vrednost tereta:'
+              TabOrder = 1
+            end
+          end
+          object Layout6: TLayout
+            Align = Center
+            Size.Width = 301.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            object Line6: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 301.000000000000000000
+              Size.Height = 8.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object datumIsporuke: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 301.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Datum isporuke:'
+              TabOrder = 1
+            end
+          end
+          object Layout5: TLayout
+            Align = Center
+            Margins.Bottom = 50.000000000000000000
+            Size.Width = 301.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            object Line5: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 301.000000000000000000
+              Size.Height = 8.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object porekloRobe: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 301.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Poreklo robe:'
+              TabOrder = 1
+            end
+          end
+          object Layout7: TLayout
+            Align = Center
+            Margins.Top = 50.000000000000000000
+            Size.Width = 301.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            object Line7: TLine
+              Align = Client
+              LineType = Bottom
+              Margins.Top = 20.000000000000000000
+              Size.Width = 301.000000000000000000
+              Size.Height = 8.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object MestoIstovara: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 301.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claWhite
+              Text = 'Mesto istovara:'
+              TabOrder = 1
+            end
+          end
+          object buttonPrikazi: TButton
+            Align = Bottom
+            Margins.Left = 100.000000000000000000
+            Margins.Right = 100.000000000000000000
+            Margins.Bottom = 20.000000000000000000
+            Position.X = 100.000000000000000000
+            Position.Y = 291.000000000000000000
+            Size.Width = 171.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 15
+            Text = 'Prikazi'
+            TextSettings.Trimming = None
+            OnClick = buttonPrikaziClick
+          end
         end
       end
     end

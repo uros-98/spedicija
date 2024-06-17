@@ -1,16 +1,16 @@
-object formMeni: TformMeni
+object formProveraPorudzbine2: TformProveraPorudzbine2
   Left = 0
   Top = 0
   Caption = 'Form1'
   ClientHeight = 480
-  ClientWidth = 597
+  ClientWidth = 600
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
-    Size.Width = 597.000000000000000000
+    Size.Width = 600.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -8524,13 +8524,13 @@ object formMeni: TformMeni
             'ike\11111.jpg'
         end>
       Align = Client
-      Size.Width = 597.000000000000000000
+      Size.Width = 600.000000000000000000
       Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       object bot: TLayout
         Align = Bottom
         Position.Y = 392.000000000000000000
-        Size.Width = 597.000000000000000000
+        Size.Width = 600.000000000000000000
         Size.Height = 88.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -8545,12 +8545,11 @@ object formMeni: TformMeni
           Text = 'Kontakt info.'
           TextSettings.FontColor = claCoral
           TextSettings.Trimming = None
-          OnClick = Button2Click
         end
       end
       object top: TLayout
         Align = Top
-        Size.Width = 597.000000000000000000
+        Size.Width = 600.000000000000000000
         Size.Height = 90.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -10137,52 +10136,83 @@ object formMeni: TformMeni
       end
       object center: TLayout
         Align = Client
-        Size.Width = 597.000000000000000000
+        Size.Width = 600.000000000000000000
         Size.Height = 302.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object ButtonZTransport: TButton
+        object Rectangle1: TRectangle
           Align = Center
-          Margins.Bottom = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Size.Width = 319.000000000000000000
+          Size.Height = 248.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
-          Text = 'Zakazite transport'
-          TextSettings.Trimming = None
-          OnClick = ButtonZTransportClick
-        end
-        object buttonPTransport: TButton
-          Align = Center
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 2
-          Text = 'Pratite transport'
-          TextSettings.Trimming = None
-          OnClick = buttonPTransportClick
-        end
-        object buttonCarina: TButton
-          Align = Center
-          Margins.Top = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          Text = 'Carinske usluge'
-          TextSettings.Trimming = None
-          OnClick = buttonCarinaClick
-        end
-        object buttonPPorudzbine: TButton
-          Align = Center
-          Margins.Top = 200.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          Text = 'Provera porudzbine'
-          TextSettings.Trimming = None
-          OnClick = buttonPPorudzbineClick
+          object podaciOPorudzbini: TLabel
+            Align = Top
+            StyledSettings = [Family, FontColor]
+            Size.Width = 319.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00090000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Podaci o porudzbini:'
+            TabOrder = 0
+          end
+          object labelVrstaTereta: TLabel
+            Align = VertCenter
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Bottom = 160.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 46.000000000000000000
+            Size.Width = 314.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Vrsta tereta:'
+            TabOrder = 4
+          end
+          object labelAdresaIsporuke: TLabel
+            Align = VertCenter
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Bottom = 100.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 76.000000000000000000
+            Size.Width = 314.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Adresa isporuke:'
+            TabOrder = 3
+          end
+          object labelDatumIsporuke: TLabel
+            Align = VertCenter
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Bottom = 40.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 106.000000000000000000
+            Size.Width = 314.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Datum Isporuke:'
+            TabOrder = 2
+          end
+          object labelTransportnaKompanija: TLabel
+            Align = VertCenter
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 136.000000000000000000
+            Size.Width = 314.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Naziv kompanije: Preduzece1'
+            TabOrder = 1
+          end
         end
       end
     end

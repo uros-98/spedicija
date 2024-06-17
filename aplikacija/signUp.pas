@@ -18,10 +18,12 @@ type
     Label1: TLabel;
     buttonLogin: TButton;
     buttonZaposleni: TButton;
+    buttonDispeceri: TButton;
     procedure Label1Click(Sender: TObject);
     procedure buttonLoginClick(Sender: TObject);
     procedure buttonRegisterClick(Sender: TObject);
     procedure buttonZaposleniClick(Sender: TObject);
+    procedure buttonDispeceriClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +35,7 @@ var
 
 implementation
 
-uses login,register,loginZaposleni;
+uses login,register,loginZaposleni, loginDispicer;
 {$R *.fmx}
 
 
@@ -41,6 +43,12 @@ procedure TformSignUp.buttonZaposleniClick(Sender: TObject);
 begin
     formSignUp.hide;
     formLoginZaposleni.show;
+end;
+
+procedure TformSignUp.buttonDispeceriClick(Sender: TObject);
+begin
+    formSignUp.Hide;
+    formLoginDIspicer.show;
 end;
 
 procedure TformSignUp.buttonLoginClick(Sender: TObject);

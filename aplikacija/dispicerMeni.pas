@@ -1,4 +1,4 @@
-unit zaposleniMeni;
+unit dispicerMeni;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.Layouts;
 
 type
-  TformZaposleniMeni = class(TForm)
+  TformDispicerMeni = class(TForm)
     slika: TLayout;
     Image1: TImage;
     bot: TLayout;
@@ -20,9 +20,9 @@ type
     buttonPTransport: TButton;
     buttonCarina: TButton;
     buttonRSkladiste: TButton;
-    procedure Button1Click(Sender: TObject);
     procedure ButtonZTransportClick(Sender: TObject);
     procedure buttonPTransportClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure buttonCarinaClick(Sender: TObject);
     procedure buttonRSkladisteClick(Sender: TObject);
   private
@@ -32,42 +32,42 @@ type
   end;
 
 var
-  formZaposleniMeni: TformZaposleniMeni;
+  formDispicerMeni: TformDispicerMeni;
 
 implementation
 
-uses loginZaposleni2, infoTeret, komunikacija, odrzavanje, potvrdaDostave;
+uses dispicerKomunikacija, dispicerTransport, loginDispicer, dispicerBerza, izbor;
+
 {$R *.fmx}
 
-procedure TformZaposleniMeni.Button1Click(Sender: TObject);
+procedure TformDispicerMeni.Button1Click(Sender: TObject);
 begin
-    formZaposleniMeni.hide;
-    formLoginZaposleni2.show;
+    formDispicerMeni.hide;
+    formLoginDispicer.show;
 end;
 
-procedure TformZaposleniMeni.buttonCarinaClick(Sender: TObject);
+procedure TformDispicerMeni.buttonCarinaClick(Sender: TObject);
 begin
-    formZaposleniMeni.hide;
-    formOdrzavanje.show;
-
+    formDispicerMeni.hide;
+    formDispicerBerza.show;
 end;
 
-procedure TformZaposleniMeni.buttonPTransportClick(Sender: TObject);
+procedure TformDispicerMeni.buttonPTransportClick(Sender: TObject);
 begin
-    formZaposleniMeni.hide;
-    formKomunikacija.show;
+    formDispicerMeni.hide;
+    formDispicerTransport.show;
 end;
 
-procedure TformZaposleniMeni.buttonRSkladisteClick(Sender: TObject);
+procedure TformDispicerMeni.buttonRSkladisteClick(Sender: TObject);
 begin
-    formZaposleniMeni.hide;
-    formPotvrdaDostave.show;
+    formDispicerMeni.hide;
+    formIzbor.show;
 end;
 
-procedure TformZaposleniMeni.ButtonZTransportClick(Sender: TObject);
+procedure TformDispicerMeni.ButtonZTransportClick(Sender: TObject);
 begin
-    formZaposleniMeni.Hide;
-    formInfoTeret.show;
+    formDispicerMeni.hide;
+    formDispicerKomunikacija.show;
 end;
 
 end.

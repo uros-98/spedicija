@@ -8562,6 +8562,7 @@ object formPratiTransport: TformPratiTransport
           TabOrder = 0
           Text = 'Button1'
           TextSettings.Trimming = None
+          OnClick = Button1Click
         end
         object Image2: TImage
           MultiResBitmap.Height = 1500

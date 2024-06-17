@@ -1,17 +1,17 @@
-object formMeni: TformMeni
+object formOdrzavanje: TformOdrzavanje
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 480
-  ClientWidth = 597
+  ClientHeight = 474
+  ClientWidth = 580
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
-    Size.Width = 597.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 580.000000000000000000
+    Size.Height = 474.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object Image1: TImage
@@ -8524,14 +8524,14 @@ object formMeni: TformMeni
             'ike\11111.jpg'
         end>
       Align = Client
-      Size.Width = 597.000000000000000000
-      Size.Height = 480.000000000000000000
+      Size.Width = 580.000000000000000000
+      Size.Height = 474.000000000000000000
       Size.PlatformDefault = False
       object bot: TLayout
         Align = Bottom
-        Position.Y = 392.000000000000000000
-        Size.Width = 597.000000000000000000
-        Size.Height = 88.000000000000000000
+        Position.Y = 434.000000000000000000
+        Size.Width = 580.000000000000000000
+        Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         object Button2: TButton
@@ -8545,12 +8545,11 @@ object formMeni: TformMeni
           Text = 'Kontakt info.'
           TextSettings.FontColor = claCoral
           TextSettings.Trimming = None
-          OnClick = Button2Click
         end
       end
       object top: TLayout
         Align = Top
-        Size.Width = 597.000000000000000000
+        Size.Width = 580.000000000000000000
         Size.Height = 90.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -10137,52 +10136,404 @@ object formMeni: TformMeni
       end
       object center: TLayout
         Align = Client
-        Size.Width = 597.000000000000000000
-        Size.Height = 302.000000000000000000
+        Size.Width = 580.000000000000000000
+        Size.Height = 344.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object ButtonZTransport: TButton
+        object Rectangle1: TRectangle
           Align = Center
-          Margins.Bottom = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Fill.Color = claSnow
+          Size.Width = 435.000000000000000000
+          Size.Height = 340.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
-          Text = 'Zakazite transport'
-          TextSettings.Trimming = None
-          OnClick = ButtonZTransportClick
+          Stroke.Color = claCoral
+          object Label1: TLabel
+            Align = Center
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Right = 290.000000000000000000
+            Margins.Bottom = 300.000000000000000000
+            Size.Width = 117.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Informacije o vozilu:'
+            TabOrder = 8
+          end
+          object Label2: TLabel
+            Align = Center
+            Margins.Right = 300.000000000000000000
+            Margins.Bottom = 250.000000000000000000
+            Size.Width = 109.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Marka: Volvo'
+            TabOrder = 4
+          end
+          object Label3: TLabel
+            Align = Center
+            Margins.Right = 300.000000000000000000
+            Margins.Bottom = 200.000000000000000000
+            Size.Width = 109.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Model: FH 600'
+            TabOrder = 3
+          end
+          object Label4: TLabel
+            Align = Center
+            Margins.Right = 270.000000000000000000
+            Margins.Bottom = 150.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Godina proizvodnje: 2018'
+            TabOrder = 2
+          end
+          object Label5: TLabel
+            Align = Center
+            Margins.Right = 270.000000000000000000
+            Margins.Bottom = 100.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Reg. oznaka: KG-001-AB'
+            TabOrder = 1
+          end
+          object ComboBox1: TComboBox
+            Align = Center
+            Margins.Right = 270.000000000000000000
+            Margins.Bottom = 50.000000000000000000
+            Size.Width = 133.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            object ListBoxItem1: TListBoxItem
+              TabOrder = 0
+              Text = 'Sledeci tehnicki pregled'
+            end
+          end
+          object Label6: TLabel
+            Align = Center
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 290.000000000000000000
+            Margins.Bottom = 300.000000000000000000
+            Size.Width = 117.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Nova Intervencija/e:'
+            TabOrder = 7
+          end
+          object Label7: TLabel
+            Align = Center
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 290.000000000000000000
+            Margins.Bottom = 250.000000000000000000
+            Size.Width = 117.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Datum: 14/03/2023'
+            TabOrder = 6
+          end
+          object Label8: TLabel
+            Align = Center
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 290.000000000000000000
+            Margins.Bottom = 200.000000000000000000
+            Size.Width = 117.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Kilometra'#382'a: 657839'
+            TabOrder = 5
+          end
+          object ComboBox2: TComboBox
+            Align = Center
+            Margins.Left = 270.000000000000000000
+            Margins.Bottom = 150.000000000000000000
+            Size.Width = 133.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            object ListBoxItem2: TListBoxItem
+              TabOrder = 0
+              Text = 'Izaberite Intervenciju'
+            end
+          end
+          object Label9: TLabel
+            Align = Center
+            Margins.Left = 230.000000000000000000
+            Margins.Bottom = 100.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Cena:'
+            TabOrder = 0
+          end
+          object Rectangle2: TRectangle
+            Align = Center
+            Fill.Color = claWhite
+            Margins.Left = 230.000000000000000000
+            Margins.Bottom = 100.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCoral
+            object Edit1: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              StyleLookup = 'transparentedit'
+              TabOrder = 0
+              Size.Width = 73.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object ComboBox3: TComboBox
+            Align = Center
+            Margins.Left = 350.000000000000000000
+            Margins.Bottom = 100.000000000000000000
+            Size.Width = 41.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            object ListBoxItem3: TListBoxItem
+              TabOrder = 0
+              Text = 'RSD'
+            end
+            object ListBoxItem4: TListBoxItem
+              TabOrder = 1
+              Text = 'EUR'
+            end
+          end
+          object Rectangle3: TRectangle
+            Align = Center
+            Fill.Color = claWhite
+            Margins.Left = 300.000000000000000000
+            Margins.Bottom = 50.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCoral
+            object Button3: TButton
+              Align = Client
+              Size.Width = 100.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toolbutton'
+              TabOrder = 0
+              Text = 'Zapi'#353'i intervenciju'
+              TextSettings.Trimming = None
+            end
+          end
+          object Rectangle5: TRectangle
+            Align = Center
+            Fill.Color = claWhite
+            Margins.Left = 200.000000000000000000
+            Margins.Top = 50.000000000000000000
+            Size.Width = 220.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCoral
+            object Label11: TLabel
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Size.Width = 216.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Ukupno ulo'#382'eno novca: 75E + 6.600din'
+              TabOrder = 0
+            end
+          end
+          object Rectangle8: TRectangle
+            Align = Center
+            Fill.Color = claWhite
+            Margins.Top = 290.000000000000000000
+            Size.Width = 385.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCoral
+            object Label20: TLabel
+              Align = Center
+              Margins.Right = 300.000000000000000000
+              Margins.Bottom = 20.000000000000000000
+              Size.Width = 69.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = '557769 km'
+              TabOrder = 3
+            end
+            object Label21: TLabel
+              Align = Center
+              Margins.Left = 310.000000000000000000
+              Margins.Bottom = 20.000000000000000000
+              Size.Width = 69.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = '21/02/2023'
+              TabOrder = 0
+            end
+            object Line3: TLine
+              Align = VertCenter
+              LineType = Bottom
+              Position.Y = 18.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 4.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label22: TLabel
+              Align = Center
+              Margins.Top = 20.000000000000000000
+              Margins.Right = 220.000000000000000000
+              Size.Width = 148.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Zamena diskova - 60$'
+              TabOrder = 2
+            end
+            object Label23: TLabel
+              Align = Center
+              Margins.Left = 150.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Size.Width = 146.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Montirani Textar diskovi'
+              TabOrder = 1
+            end
+          end
         end
-        object buttonPTransport: TButton
+        object Rectangle4: TRectangle
           Align = Center
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Fill.Color = claWhite
+          Margins.Top = 50.000000000000000000
+          Margins.Right = 220.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 20.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 2
-          Text = 'Pratite transport'
-          TextSettings.Trimming = None
-          OnClick = buttonPTransportClick
+          Stroke.Color = claCoral
+          object Label10: TLabel
+            Align = Client
+            Margins.Left = 4.000000000000000000
+            Size.Width = 189.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Ukupno zabele'#382'enih intervencija: 3'
+            TabOrder = 0
+          end
         end
-        object buttonCarina: TButton
+        object Rectangle6: TRectangle
           Align = Center
-          Margins.Top = 100.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Fill.Color = claWhite
+          Margins.Top = 120.000000000000000000
+          Size.Width = 385.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 1
-          Text = 'Carinske usluge'
-          TextSettings.Trimming = None
-          OnClick = buttonCarinaClick
+          Stroke.Color = claCoral
+          object Label12: TLabel
+            Align = Center
+            Margins.Right = 300.000000000000000000
+            Margins.Bottom = 20.000000000000000000
+            Size.Width = 69.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = '557800 km'
+            TabOrder = 3
+          end
+          object Label13: TLabel
+            Align = Center
+            Margins.Left = 310.000000000000000000
+            Margins.Bottom = 20.000000000000000000
+            Size.Width = 69.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = '21/02/2023'
+            TabOrder = 0
+          end
+          object Line1: TLine
+            Align = VertCenter
+            LineType = Bottom
+            Position.Y = 18.000000000000000000
+            Size.Width = 385.000000000000000000
+            Size.Height = 4.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label14: TLabel
+            Align = Center
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 220.000000000000000000
+            Size.Width = 148.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Zamena filtera goriva - 14$'
+            TabOrder = 2
+          end
+          object Label15: TLabel
+            Align = Center
+            Margins.Left = 150.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Size.Width = 63.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Zamenjeno'
+            TabOrder = 1
+          end
         end
-        object buttonPPorudzbine: TButton
+        object Rectangle7: TRectangle
           Align = Center
-          Margins.Top = 200.000000000000000000
-          Size.Width = 306.000000000000000000
-          Size.Height = 22.000000000000000000
+          Fill.Color = claWhite
+          Margins.Top = 205.000000000000000000
+          Size.Width = 385.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 0
-          Text = 'Provera porudzbine'
-          TextSettings.Trimming = None
-          OnClick = buttonPPorudzbineClick
+          Stroke.Color = claCoral
+          object Label16: TLabel
+            Align = Center
+            Margins.Right = 300.000000000000000000
+            Margins.Bottom = 20.000000000000000000
+            Size.Width = 69.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = '557800 km'
+            TabOrder = 3
+          end
+          object Label17: TLabel
+            Align = Center
+            Margins.Left = 310.000000000000000000
+            Margins.Bottom = 20.000000000000000000
+            Size.Width = 69.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = '21/02/2023'
+            TabOrder = 0
+          end
+          object Line2: TLine
+            Align = VertCenter
+            LineType = Bottom
+            Position.Y = 18.000000000000000000
+            Size.Width = 385.000000000000000000
+            Size.Height = 4.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label18: TLabel
+            Align = Center
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 220.000000000000000000
+            Size.Width = 148.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Zamena ulja - 6.500 RSD'
+            TabOrder = 2
+          end
+          object Label19: TLabel
+            Align = Center
+            Margins.Left = 150.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Size.Width = 146.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Sipano Mannol ulje 10w40'
+            TabOrder = 1
+          end
         end
       end
     end
