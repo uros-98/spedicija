@@ -21,6 +21,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure ListBox1Change(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
     procedure LoadData;
@@ -33,9 +34,15 @@ var
 
 implementation
 
-uses dm; // Assuming dm is your data module unit where the database connection is defined
+uses dm,dispicerMeni; // Assuming dm is your data module unit where the database connection is defined
 
 {$R *.fmx}
+
+procedure TformDispicerBerza.Button1Click(Sender: TObject);
+begin
+    formdispicerBerza.hide;
+    formdispicerMeni.show;
+end;
 
 procedure TformDispicerBerza.FormShow(Sender: TObject);
 begin

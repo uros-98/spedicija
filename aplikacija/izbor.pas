@@ -42,6 +42,7 @@ type
     Label7: TLabel;
     buttonPotvrdi: TButton;
     procedure buttonPotvrdiClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
     procedure InsertDataIntoDatabase;
@@ -55,9 +56,15 @@ var
 
 implementation
 
-uses dm; // Assuming dm is your data module unit where the database connection is defined
+uses dm, dispicerMeni; // Assuming dm is your data module unit where the database connection is defined
 
 {$R *.fmx}
+
+procedure TformIzbor.Button1Click(Sender: TObject);
+begin
+    formizbor.hide;
+    formDispicerMeni.show;
+end;
 
 procedure TformIzbor.buttonPotvrdiClick(Sender: TObject);
 begin
